@@ -28,3 +28,10 @@ These is the information that I want to be searchable:
     - folders (these will be manually created by the user to represent some trip for example)
 
 
+## Database
+For convienince the database will run in a docker container. And for now the python code that will deal with ingesting the images and other things will be run locally
+
+
+
+Will need to have a script to reindex all the images. In the database I will store the hash of the image. If I move the image manually, the path in the database will no longer match.
+Running this indexer script will go through all the images, find the missing images with the hash and update their path
